@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini | Luxury Supercars</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-container">
+                <img src="/images/Lamborghini Bull Emblem in Gold.png" alt="Lamborghini Logo" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="our-cars.html">Our Cars</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Video Slider Section -->
+        <section class="video-slider-container">
+            <div class="video-slider">
+                <div class="video-slide active">
+                    <video id="video1" muted>
+                        <source src="/videos/lambor intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay"></div>
+                    <div class="video-content">
+                        <h2>Introduction To Beast</h2>
+                        <p>Experience the raw power and precision engineering of Lamborghini's flagship supercar.</p>
+                    </div>
+                </div>
+                <div class="video-slide">
+                    <video id="video2" muted>
+                        <source src="/videos/lambor2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay"></div>
+                    <div class="video-content">
+                        <h2>Unleash The Beast</h2>
+                        <p>Italian craftsmanship meets aerodynamic perfection in every curve and line.</p>
+                    </div>
+                </div>
+                <div class="video-slide">
+                    <video id="video3" muted>
+                        <source src="/videos/lambor3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay"></div>
+                    <div class="video-content">
+                        <h2>Leash The Anger With Mad Speed</h2>
+                        <p>Pushing the boundaries of performance and luxury with innovative technology.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <div class="slider-dot active" data-slide="0"></div>
+                <div class="slider-dot" data-slide="1"></div>
+                <div class="slider-dot" data-slide="2"></div>
+            </div>
+            <div class="volume-control">
+                <i class="fas fa-volume-up volume-btn" id="volumeBtn"></i>
+                <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume-slider" id="volumeSlider">
+            </div>
+        </section>
+
+        <!-- Superior Selling Cars Section -->
+        <section class="section">
+            <h2 class="section-title">Superior Selling Cars</h2>
+            <div class="cars-container">
+                <div class="car-card" data-car="aventador">
+                    <img src="images/1p.jpg" alt="Lamborghini Aventador" class="car-image">
+                    <div class="car-content">
+                        <h3 class="car-title">Aventador SVJ</h3>
+                        <p class="car-description">The ultimate expression of Lamborghini's engineering excellence.</p>
+                        <div class="car-details">
+                            <div class="car-detail">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>217 mph</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-horse-head"></i>
+                                <span>770 HP</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span>$517,000</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-heart"></i>
+                                <span>98% Love</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-car="huracan">
+                    <img src="images/2p.jpg" alt="Lamborghini Huracan" class="car-image">
+                    <div class="car-content">
+                        <h3 class="car-title">Huracán EVO</h3>
+                        <p class="car-description">Precision engineering meets extraordinary performance.</p>
+                        <div class="car-details">
+                            <div class="car-detail">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>202 mph</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-horse-head"></i>
+                                <span>640 HP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-car="urus">
+                    <img src="images/4p.jpg" alt="Lamborghini Urus" class="car-image">
+                    <div class="car-content">
+                        <h3 class="car-title">Urus</h3>
+                        <p class="car-description">The world's first Super Sport Utility Vehicle.</p>
+                        <div class="car-details">
+                            <div class="car-detail">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>190 mph</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-horse-head"></i>
+                                <span>650 HP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expanded Car View -->
+        <div class="car-expanded" id="expandedView">
+            <div class="expanded-content">
+                <img src="images/1p.jpg" alt="Car Image" class="expanded-image" id="expandedImage">
+                <div class="expanded-details">
+                    <div class="close-expanded" id="closeExpanded">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <h2 id="expandedTitle"></h2>
+                    <p id="expandedDescription"></p>
+                    <div class="car-specs">
+                        <div class="spec">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span id="expandedSpeed"></span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-horse-head"></i>
+                            <span id="expandedHorsepower"></span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span id="expandedCost"></span>
+                        </div>
+                        <div class="spec">
+                            <i class="fas fa-heart"></i>
+                            <span id="expandedLove"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Our Story Section -->
+        <section class="section">
+            <h2 class="section-title">Our Story</h2>
+            <div class="story-container">
+                <div class="story-content">
+                    <div class="story-quote">
+                        "The world is not enough. You have to go beyond what is possible to achieve the impossible."
+                    </div>
+                    <div class="story-text">
+                        <p>Founded in 1963 by Ferruccio Lamborghini, Automobili Lamborghini was created out of a desire to <span class="highlight">challenge conventions</span> and push beyond established limits. What began as one man's dream has evolved into a symbol of <span class="highlight">Italian excellence</span> and automotive innovation.</p>
+
+                        <p>Each Lamborghini is a masterpiece of engineering, design, and performance. From the iconic Miura that revolutionized supercar design to the cutting-edge Sián that incorporates hybrid technology, we have consistently <span class="highlight">redefined what's possible</span> in the automotive world.</p>
+
+                        <p>Our story is one of passion, innovation, and an unwavering commitment to excellence. We don't just build cars; we create dreams on four wheels that <span class="highlight">inspire generations</span> and capture the imagination of enthusiasts worldwide.</p>
+
+                        <p>Today, Lamborghini continues to push boundaries, combining breathtaking performance with sustainable technologies, ensuring that our legacy of innovation continues for generations to come.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loved by Our Community Section -->
+        <section class="section">
+            <h2 class="section-title">Loved by Our Community</h2>
+            <div class="reviews-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="review-avatar">
+                        <div>
+                            <h3 class="review-name">Michael Roberts</h3>
+                            <p class="review-role">Aventador Owner</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The Aventador is more than a car—it's an experience. The power, the design, the attention to detail—everything is perfection. Lamborghini has created a masterpiece."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="review-avatar">
+                        <div>
+                            <h3 class="review-name">Sarah Johnson</h3>
+                            <p class="review-role">Huracán Owner</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"I've owned my Huracán for two years now, and it still turns heads everywhere I go. The performance is breathtaking, and the craftsmanship is exceptional."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User" class="review-avatar">
+                        <div>
+                            <h3 class="review-name">James Wilson</h3>
+                            <p class="review-role">Urus Owner</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The Urus combines supercar performance with everyday practicality. It's the perfect vehicle for someone who wants it all—power, luxury, and versatility."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="index.html" class="logo-container">
+                    <img src="/images/Lamborghini Bull Emblem in Gold.png" alt="Lamborghini Logo" class="logo" />
+                </a>
+                <span>Lamborghini</span>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="quote-badge">
+                "<b>Beyond the impossible lies the extraordinary. Dare to dream, then build it.</b>"
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/video-slider.js"></script>
+    <script src="js/car-expand.js"></script>
+</body>
+</html>
